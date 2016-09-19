@@ -6,7 +6,7 @@ unsigned long delayTime;
 
 int offDelayTime = 90;
 
-int betweenTime = 1000;
+int betweenTime = 2000;
 int pennyCount = 0;
 void setup() {
   // put your setup code here, to run once:
