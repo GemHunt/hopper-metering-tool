@@ -1,14 +1,11 @@
 int hopperSignalPin = 0;
 int motorPin = 9;
-unsigned long startTime;
-unsigned long delayTime = 35;
 unsigned long coinEnterTime = 0;
 unsigned long coinExitTime = 0;
 unsigned long coinPassTime = 0;
 unsigned long betweenTime = 200;
 unsigned long pennyCount = 0;
-int lastSignalLow = 0;
-int lastSignalHigh = 0;
+
 
 void setup() {
   // put your setup code here, to run once:
@@ -16,11 +13,7 @@ void setup() {
   pinMode(hopperSignalPin, INPUT);
   pinMode(motorPin, OUTPUT);
 
-  betweenTime -= coinPassTime;
-  startTime = millis();
-  //Turn the motor on:
   digitalWrite(motorPin,LOW);
-  startTime = millis();
 }
 
 void loop() {
