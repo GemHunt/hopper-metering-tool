@@ -1,9 +1,10 @@
-int hopperSignalPin = 0;
+int hopperSignalPin = A0;
 int motorPin = 9;
 unsigned long coinEnterTime = 0;
 unsigned long coinExitTime = 0;
 unsigned long coinPassTime = 0;
-unsigned long betweenTime = 200;
+//OK just once and stop for now:
+unsigned long betweenTime = 90000000;
 unsigned long pennyCount = 0;
 
 
@@ -18,8 +19,8 @@ void setup() {
 
 void loop() {
   int signalReading = analogRead(hopperSignalPin);
-    //Serial.print("sig");
-    //Serial.println(signalReading);
+    Serial.print("sig");
+    Serial.println(signalReading);
   if (signalReading < 20) {
     if (coinPassTime == 0){
       coinPassTime = 1;
