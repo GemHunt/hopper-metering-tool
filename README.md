@@ -1,6 +1,15 @@
 # hopper-metering-tool
 Uses an Arduino to meter coins out of an Suzohapp MKII Cube Hopper at an exact interval. 
 
+This works great and is used in production.
+
+Tasks for next build:
+  * Post a picture of the current build.
+  * Test if the whole hopper can be turned off instead of just the motor. 
+  * It would be nice to print a circuit board for this.
+
+***
+
 It gets input from the cube hopper's open-collector output time the power on the motor. 
 
 A general page on an open-collector circuit details:  http://www.evilmadscientist.com/2012/basics-open-collector-outputs/
